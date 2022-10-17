@@ -9,8 +9,7 @@ Library    SeleniumLibrary
 
 ${browser}   chrome
 ${url}   https://www.google.com
-${link1}    https://robotframework.org
-${link2}    https://github.com/robotframework/robotframework
+
 
 
 
@@ -20,7 +19,7 @@ Login Test
     maximize browser window
     input text    xpath://input[@type='text']    RobotFramework
     click button    xpath://div[@class='FPdoLc lJ9FBc']//input[@class='gNO89b']
-    
+
 Print the required links
     ${web1}=     get element attribute    xpath://div[@class='eKjLze']//a   href
     ${web2}=    get text    xpath://div[@class='eKjLze']//a/h3
